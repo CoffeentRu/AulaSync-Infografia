@@ -19,7 +19,6 @@
 
 [![Ver Infografía](https://img.shields.io/badge/🌐_Ver_Infografía-Live-c9a84c?style=for-the-badge&labelColor=080d1a)](https://coffeentru.github.io/AulaSync-Infografia/)
 [![GitHub](https://img.shields.io/badge/GitHub-CoffeentRu-e2c06b?style=for-the-badge&logo=github&logoColor=white&labelColor=080d1a)](https://github.com/CoffeentRu)
-[![Licencia](https://img.shields.io/badge/Licencia-Académica-b794f4?style=for-the-badge&labelColor=080d1a)](./LICENSE)
 
 <br/>
 

@@ -1,0 +1,1291 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="AulaSync — Infografía del Módulo Principal. Plataforma educativa full-stack tipo Google Classroom. Proyecto formativo 2026."
+    />
+    <meta name="author" content="AulaSync · Proyecto Formativo 2026" />
+
+    <title>AulaSync — Infografía Módulo Principal</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons (CDN) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!-- Particles Canvas -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- Reading Progress Bar -->
+    <div
+      id="reading-bar"
+      role="progressbar"
+      aria-label="Progreso de lectura"
+    ></div>
+
+    <!-- ── Navigation ── -->
+    <nav role="navigation" aria-label="Navegación principal">
+      <span class="nav-logo">AulaSync</span>
+      <ul class="nav-links" id="navlinks">
+        <li><a href="#que-es">¿Qué es?</a></li>
+        <li><a href="#roles">Roles</a></li>
+        <li><a href="#flujo">Flujo</a></li>
+        <li><a href="#tech">Stack</a></li>
+        <li><a href="#seguridad">Seguridad</a></li>
+        <li><a href="#roadmap">Roadmap</a></li>
+      </ul>
+      <button
+        class="nav-toggle"
+        id="navtoggle"
+        aria-label="Abrir menú"
+        aria-expanded="false"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- ── Page Wrapper ── -->
+    <main class="page">
+      <!-- ════════════════════════════════
+         HERO
+    ════════════════════════════════ -->
+      <section class="hero" id="top" aria-label="Presentación">
+        <div class="hero-eyebrow">
+          <span class="dot-live" aria-hidden="true"></span>
+          Infografía · Módulo Principal AulaSync
+        </div>
+
+        <h1 class="hero-title">
+          La plataforma educativa<br />
+          para <em>instituciones</em> modernas
+        </h1>
+
+        <p class="hero-sub">
+          AulaSync es un Google Classroom propio — gestión de cursos con guías y
+          materiales, roles diferenciados, seguimiento de progreso en tiempo
+          real y un diseño elegante navy/dorado pensado para 2026.
+        </p>
+
+        <div class="hero-divider" aria-hidden="true"></div>
+
+        <div class="hero-stats" role="list">
+          <div class="stat-card" role="listitem">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Roles de usuario</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-num">RS256</span>
+            <span class="stat-label">Seguridad JWT</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-num">7</span>
+            <span class="stat-label">Pasos del módulo</span>
+          </div>
+          <div class="stat-card" role="listitem">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Fichas escalables</span>
+          </div>
+        </div>
+      </section>
+      <!-- /hero -->
+
+      <!-- ════════════════════════════════
+         QUÉ ES AULASYNC
+    ════════════════════════════════ -->
+      <section
+        class="section reveal"
+        id="que-es"
+        aria-label="¿Qué es AulaSync?"
+      >
+        <div class="section-header">
+          <span class="section-eyebrow">¿Qué es AulaSync?</span>
+          <h2 class="section-title">Una academia <em>digital completa</em></h2>
+          <p class="section-desc">
+            Diseñada para instituciones y academias que necesitan gestionar
+            cursos, instructores y estudiantes desde una sola plataforma robusta
+            y segura — sin depender de terceros.
+          </p>
+          <div class="sep" aria-hidden="true"></div>
+        </div>
+
+        <div class="what-grid">
+          <div class="what-card">
+            <div class="what-icon" aria-hidden="true">
+              <i data-lucide="building-2"></i>
+            </div>
+            <h3>Para instituciones educativas</h3>
+            <p>
+              Academias, bootcamps e instituciones formativas que necesitan
+              escalar su modelo educativo. Control total sobre el contenido, las
+              fichas y los datos de los estudiantes sin pagar licencias
+              externas.
+            </p>
+          </div>
+
+          <div class="what-card">
+            <div class="what-icon" aria-hidden="true">
+              <i data-lucide="book-open"></i>
+            </div>
+            <h3>Guías y fichas por clase</h3>
+            <p>
+              Los instructores crean fichas/clases con materiales descargables,
+              videos y recursos de apoyo. Los aprendices siguen el contenido a
+              su ritmo. No hay certificados — el objetivo es el aprendizaje y la
+              formación continua.
+            </p>
+          </div>
+
+          <div class="what-card">
+            <div class="what-icon" aria-hidden="true">
+              <i data-lucide="shield-check"></i>
+            </div>
+            <h3>Seguridad de producción</h3>
+            <p>
+              JWT firmado en RS256, tokens de acceso de 15 minutos, refresh
+              token en cookie httpOnly, rotación automática con detección de
+              reutilización y audit log completo desde el primer día.
+            </p>
+          </div>
+
+          <div class="what-card">
+            <div class="what-icon" aria-hidden="true">
+              <i data-lucide="bar-chart-3"></i>
+            </div>
+            <h3>Seguimiento de progreso real</h3>
+            <p>
+              Dashboard con porcentaje de avance por ficha/clase, historial de
+              acceso, recursos vistos y notas del instructor. Métricas en tiempo
+              real para aprendices, instructores y el administrador.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- /que-es -->
+
+      <!-- ════════════════════════════════
+         ROLES
+    ════════════════════════════════ -->
+      <section class="section reveal" id="roles" aria-label="Sistema de roles">
+        <div class="section-header">
+          <span class="section-eyebrow">Sistema de Roles</span>
+          <h2 class="section-title">Tres niveles de <em>acceso</em></h2>
+          <p class="section-desc">
+            Cada rol tiene su propio dashboard y rutas protegidas. Un aprendiz
+            que intente acceder al panel de administración es redirigido
+            automáticamente a su dashboard.
+          </p>
+          <div class="sep" aria-hidden="true"></div>
+        </div>
+
+        <div class="roles-grid">
+          <!-- Instructor -->
+          <div class="role-card instructor">
+            <div class="role-avatar" aria-hidden="true">
+              <i data-lucide="user-cog"></i>
+            </div>
+            <h3>Instructor</h3>
+            <p>
+              Creado únicamente por un administrador. Gestiona sus propios
+              cursos, fichas y los aprendices inscritos en su área.
+            </p>
+            <ul class="role-perms">
+              <li>
+                <i data-lucide="chevron-right"></i> Crear y editar cursos
+                propios
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Subir guías y videos a
+                Cloudinary
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Adjuntar materiales por
+                ficha
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Dejar notas y comentarios
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Ver progreso de sus
+                aprendices
+              </li>
+              <li><i data-lucide="chevron-right"></i> Chat dentro del curso</li>
+            </ul>
+          </div>
+
+          <!-- Aprendiz -->
+          <div class="role-card aprendiz">
+            <div class="role-avatar" aria-hidden="true">
+              <i data-lucide="graduation-cap"></i>
+            </div>
+            <h3>Aprendiz</h3>
+            <p>
+              Rol por defecto al registrarse. Accede al catálogo de cursos, se
+              inscribe y sigue el contenido de cada ficha a su propio ritmo.
+            </p>
+            <ul class="role-perms">
+              <li>
+                <i data-lucide="chevron-right"></i> Explorar catálogo de cursos
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Inscribirse en fichas/clases
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Ver videos y materiales
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Descargar recursos adjuntos
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Marcar fichas como
+                completadas
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Consultar su progreso
+                personal
+              </li>
+            </ul>
+          </div>
+
+          <!-- Admin -->
+          <div class="role-card admin">
+            <div class="role-avatar" aria-hidden="true">
+              <i data-lucide="settings-2"></i>
+            </div>
+            <h3>Admin</h3>
+            <p>
+              Creado mediante script de seed. Acceso total a la plataforma,
+              gestión de todos los usuarios y consulta del audit log.
+            </p>
+            <ul class="role-perms">
+              <li>
+                <i data-lucide="chevron-right"></i> Ver todos los usuarios
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Crear cuentas de instructor
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Activar / desactivar cuentas
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Consultar audit log completo
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Acceso a todas las métricas
+              </li>
+              <li>
+                <i data-lucide="chevron-right"></i> Gestión global de la
+                plataforma
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /roles -->
+
+      <!-- ════════════════════════════════
+         FLUJO — MÓDULO DE CURSOS
+    ════════════════════════════════ -->
+      <section
+        class="section"
+        id="flujo"
+        aria-label="Flujo del módulo de cursos"
+      >
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Módulo de Cursos y Fichas</span>
+          <h2 class="section-title">El flujo completo <em>paso a paso</em></h2>
+          <p class="section-desc">
+            Desde que el instructor crea el curso hasta que el aprendiz completa
+            todas las fichas. Haz clic en cada paso para ver los detalles
+            técnicos.
+          </p>
+          <div class="sep" aria-hidden="true"></div>
+        </div>
+
+        <!-- Legend -->
+        <div class="steps-legend reveal" aria-label="Leyenda de actores">
+          <div class="legend-item">
+            <span
+              class="legend-dot"
+              style="background: var(--gold)"
+              aria-hidden="true"
+            ></span>
+            Instructor
+          </div>
+          <div class="legend-item">
+            <span
+              class="legend-dot"
+              style="background: var(--blue)"
+              aria-hidden="true"
+            ></span>
+            Aprendiz
+          </div>
+          <div class="legend-item">
+            <span
+              class="legend-dot"
+              style="background: var(--purple)"
+              aria-hidden="true"
+            ></span>
+            Sistema
+          </div>
+        </div>
+
+        <div class="timeline-wrap" role="list">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Step 01 -->
+          <article class="step" data-d="0" role="listitem">
+            <div class="step-dot" aria-hidden="true">
+              <span class="step-dot-num">01</span>
+            </div>
+            <div
+              class="step-card"
+              onclick="toggleStep(this)"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="step-top">
+                <div class="step-top-left">
+                  <i data-lucide="plus-circle"></i>
+                  <span class="step-title">Crear el curso</span>
+                </div>
+                <span class="step-actor actor-i">Instructor</span>
+                <span class="step-arrow"
+                  ><i data-lucide="chevron-down"></i
+                ></span>
+              </div>
+              <p class="step-brief">
+                El instructor completa título, descripción, categoría y nivel de
+                dificultad. El curso se guarda en estado
+                <strong>borrador</strong> hasta su publicación — no es visible
+                para los aprendices.
+              </p>
+              <div class="step-expand">
+                <div class="expand-inner">
+                  <p class="expand-detail">
+                    El formulario incluye validación en cliente (React Hook
+                    Form) y en servidor (Express middleware). La imagen de
+                    portada se sube a Cloudinary. El curso queda en estado
+                    <code>draft</code> hasta que el instructor lo publique
+                    explícitamente.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">POST /api/courses</span>
+                    <span class="tag">status: draft</span>
+                    <span class="tag">Validación server-side</span>
+                    <span class="tag">Portada en Cloudinary</span>
+                    <span class="tag">Guardado en Supabase</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 02 -->
+          <article class="step" data-d="80" role="listitem">
+            <div class="step-dot" aria-hidden="true">
+              <span class="step-dot-num">02</span>
+            </div>
+            <div
+              class="step-card"
+              onclick="toggleStep(this)"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="step-top">
+                <div class="step-top-left">
+                  <i data-lucide="file-plus"></i>
+                  <span class="step-title">Crear fichas / clases</span>
+                </div>
+                <span class="step-actor actor-i">Instructor</span>
+                <span class="step-arrow"
+                  ><i data-lucide="chevron-down"></i
+                ></span>
+              </div>
+              <p class="step-brief">
+                Por cada ficha/clase el instructor añade título, descripción,
+                video opcional, guías descargables (PDF, slides) y recursos de
+                apoyo. Puede reordenarlas libremente.
+              </p>
+              <div class="step-expand">
+                <div class="expand-inner">
+                  <p class="expand-detail">
+                    Los videos se suben a Cloudinary con transcoding automático
+                    a HLS para streaming adaptativo y generación de thumbnails.
+                    Los materiales adjuntos (PDF, presentaciones, enlaces)
+                    quedan disponibles para los aprendices inscritos al abrir la
+                    ficha.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">POST /api/lessons</span>
+                    <span class="tag">Cloudinary HLS</span>
+                    <span class="tag">Thumbnail auto</span>
+                    <span class="tag">PDF / slides adjuntos</span>
+                    <span class="tag">Drag & drop order</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 03 -->
+          <article class="step" data-d="160" role="listitem">
+            <div class="step-dot" aria-hidden="true">
+              <span class="step-dot-num">03</span>
+            </div>
+            <div
+              class="step-card"
+              onclick="toggleStep(this)"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="step-top">
+                <div class="step-top-left">
+                  <i data-lucide="globe"></i>
+                  <span class="step-title">Publicar el curso</span>
+                </div>
+                <span class="step-actor actor-i">Instructor</span>
+                <span class="step-arrow"
+                  ><i data-lucide="chevron-down"></i
+                ></span>
+              </div>
+              <p class="step-brief">
+                Con al menos una ficha lista, el instructor publica el curso.
+                Pasa a estado público y aparece en el catálogo visible para
+                todos los aprendices registrados.
+              </p>
+              <div class="step-expand">
+                <div class="expand-inner">
+                  <p class="expand-detail">
+                    Al publicar, el sistema notifica a los aprendices con ese
+                    área de interés en su perfil. La acción queda registrada en
+                    el audit log con actor, timestamp e IP. El instructor puede
+                    despublicar en cualquier momento sin perder el contenido.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">PATCH /api/courses/:id</span>
+                    <span class="tag">status: published</span>
+                    <span class="tag">Notif. a aprendices</span>
+                    <span class="tag">Audit log</span>
+                    <span class="tag">Visible en catálogo</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 04 -->
+          <article class="step" data-d="240" role="listitem">
+            <div class="step-dot" aria-hidden="true">
+              <span class="step-dot-num">04</span>
+            </div>
+            <div
+              class="step-card"
+              onclick="toggleStep(this)"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="step-top">
+                <div class="step-top-left">
+                  <i data-lucide="user-plus"></i>
+                  <span class="step-title">Inscribirse al curso</span>
+                </div>
+                <span class="step-actor actor-a">Aprendiz</span>
+                <span class="step-arrow"
+                  ><i data-lucide="chevron-down"></i
+                ></span>
+              </div>
+              <p class="step-brief">
+                El aprendiz navega el catálogo, revisa el temario y se inscribe
+                con un clic. El sistema inicializa su registro de progreso al
+                <strong>0%</strong> y el curso aparece en su dashboard.
+              </p>
+              <div class="step-expand">
+                <div class="expand-inner">
+                  <p class="expand-detail">
+                    La inscripción crea un registro en la tabla
+                    <code>enrollments</code> con estado activo. El sistema
+                    inicializa además un registro de progreso individual por
+                    cada ficha del curso para poder trackear cuáles ha
+                    completado el aprendiz.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">POST /api/enrollments</span>
+                    <span class="tag">progress: 0%</span>
+                    <span class="tag">Dashboard actualizado</span>
+                    <span class="tag">Acceso desbloqueado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 05 -->
+          <article class="step" data-d="320" role="listitem">
+            <div class="step-dot" aria-hidden="true">
+              <span class="step-dot-num">05</span>
+            </div>
+            <div
+              class="step-card"
+              onclick="toggleStep(this)"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="step-top">
+                <div class="step-top-left">
+                  <i data-lucide="play-circle"></i>
+                  <span class="step-title">Estudiar las fichas</span>
+                </div>
+                <span class="step-actor actor-a">Aprendiz</span>
+                <span class="step-arrow"
+                  ><i data-lucide="chevron-down"></i
+                ></span>
+              </div>
+              <p class="step-brief">
+                El aprendiz abre cada ficha, ve el video y descarga los
+                materiales adjuntos. Al terminar marca la ficha como completada
+                — el sistema actualiza el progreso del curso en tiempo real.
+              </p>
+              <div class="step-expand">
+                <div class="expand-inner">
+                  <p class="expand-detail">
+                    El reproductor guarda la posición del video cada 10
+                    segundos, permitiendo retomar exactamente donde se dejó. Al
+                    marcar una ficha completada, el porcentaje global del curso
+                    se recalcula. Los materiales están en un panel lateral
+                    durante la reproducción.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">PATCH /api/progress</span>
+                    <span class="tag">Auto-save posición</span>
+                    <span class="tag">% recalculado en vivo</span>
+                    <span class="tag">Panel de materiales</span>
+                    <span class="tag">Modo fullscreen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 06 -->
+          <article class="step" data-d="400" role="listitem">
+            <div class="step-dot" aria-hidden="true">
+              <span class="step-dot-num">06</span>
+            </div>
+            <div
+              class="step-card"
+              onclick="toggleStep(this)"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="step-top">
+                <div class="step-top-left">
+                  <i data-lucide="message-square-text"></i>
+                  <span class="step-title">Notas y comentarios</span>
+                </div>
+                <span class="step-actor actor-i">Instructor</span>
+                <span class="step-arrow"
+                  ><i data-lucide="chevron-down"></i
+                ></span>
+              </div>
+              <p class="step-brief">
+                El instructor puede agregar comentarios o aclaraciones a cada
+                ficha. Los aprendices reciben notificación cuando hay nuevo
+                contenido o actualizaciones en una ficha que están cursando.
+              </p>
+              <div class="step-expand">
+                <div class="expand-inner">
+                  <p class="expand-detail">
+                    Los comentarios del instructor aparecen destacados dentro de
+                    la ficha. El historial de actualizaciones queda visible para
+                    todos los aprendices inscritos. Las notificaciones se envían
+                    en tiempo real vía WebSocket y se persisten en base de
+                    datos.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">POST /api/comments</span>
+                    <span class="tag">WebSocket notify</span>
+                    <span class="tag">Historial de updates</span>
+                    <span class="tag">Notif. a inscritos</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Step 07 -->
+          <article class="step" data-d="480" role="listitem">
+            <div class="step-dot" aria-hidden="true">
+              <span class="step-dot-num">07</span>
+            </div>
+            <div
+              class="step-card"
+              onclick="toggleStep(this)"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="step-top">
+                <div class="step-top-left">
+                  <i data-lucide="trophy"></i>
+                  <span class="step-title">Curso completado</span>
+                </div>
+                <span class="step-actor actor-s">Sistema</span>
+                <span class="step-arrow"
+                  ><i data-lucide="chevron-down"></i
+                ></span>
+              </div>
+              <p class="step-brief">
+                Al marcar todas las fichas como completadas, el sistema registra
+                la finalización del curso en el perfil del aprendiz. El progreso
+                queda guardado permanentemente como historial de formación.
+              </p>
+              <div class="step-expand">
+                <div class="expand-inner">
+                  <p class="expand-detail">
+                    El sistema actualiza el campo <code>completed_at</code> en
+                    la tabla <code>enrollments</code> y mueve el curso a la
+                    sección "Completados" del dashboard. El instructor recibe un
+                    reporte del progreso final del aprendiz. No se emiten
+                    certificados — el valor está en el aprendizaje.
+                  </p>
+                  <div class="tags">
+                    <span class="tag">PATCH /api/enrollments/:id</span>
+                    <span class="tag">completed_at registrado</span>
+                    <span class="tag">Dashboard actualizado</span>
+                    <span class="tag">Reporte al instructor</span>
+                    <span class="tag">Historial de formación</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- /timeline -->
+      </section>
+      <!-- /flujo -->
+
+      <!-- ════════════════════════════════
+         STACK TÉCNICO
+    ════════════════════════════════ -->
+      <section class="section reveal" id="tech" aria-label="Stack tecnológico">
+        <div class="section-header">
+          <span class="section-eyebrow">Stack Técnico</span>
+          <h2 class="section-title">
+            Arquitectura <em>moderna</em> y escalable
+          </h2>
+          <p class="section-desc">
+            Cada capa del stack fue elegida para maximizar rendimiento,
+            seguridad y developer experience en el contexto del proyecto
+            formativo 2026.
+          </p>
+          <div class="sep" aria-hidden="true"></div>
+        </div>
+
+        <div class="tech-grid">
+          <div class="tech-cell">
+            <div class="tech-cell-icon" aria-hidden="true">
+              <i data-lucide="zap"></i>
+            </div>
+            <strong>React 18 + Vite</strong>
+            <p>
+              Frontend con Concurrent Mode. HMR ultrarrápido. Tailwind CSS y
+              Framer Motion para UI y animaciones.
+            </p>
+          </div>
+
+          <div class="tech-cell">
+            <div class="tech-cell-icon" aria-hidden="true">
+              <i data-lucide="server"></i>
+            </div>
+            <strong>Node.js + Express</strong>
+            <p>
+              API REST modular con middleware JWT, rate limiting por IP, Helmet
+              y validación de inputs en todos los endpoints.
+            </p>
+          </div>
+
+          <div class="tech-cell">
+            <div class="tech-cell-icon" aria-hidden="true">
+              <i data-lucide="database"></i>
+            </div>
+            <strong>Supabase / PostgreSQL</strong>
+            <p>
+              Base de datos relacional con RLS policies. Tablas optimizadas para
+              cursos, fichas, matrículas y audit log.
+            </p>
+          </div>
+
+          <div class="tech-cell">
+            <div class="tech-cell-icon" aria-hidden="true">
+              <i data-lucide="cloud-upload"></i>
+            </div>
+            <strong>Cloudinary</strong>
+            <p>
+              Storage y streaming adaptativo de videos con transcoding HLS,
+              thumbnails automáticos y CDN global.
+            </p>
+          </div>
+        </div>
+
+        <!-- Database Schema -->
+        <div class="schema-intro">
+          <div class="section-header">
+            <span class="section-eyebrow">Esquema de base de datos</span>
+            <h3 class="section-title" style="font-size: clamp(22px, 3vw, 32px)">
+              Tablas del <em>módulo de cursos</em>
+            </h3>
+            <p class="section-desc">
+              Estructura principal con sus relaciones. En dorado las PK, en azul
+              las FK.
+            </p>
+          </div>
+          <div class="schema-wrap">
+            <div class="schema-table">
+              <div class="schema-head">
+                <i data-lucide="layout-list"></i> courses
+              </div>
+              <div class="schema-field">
+                <span class="pk">id</span
+                ><span class="schema-type">uuid PK</span>
+              </div>
+              <div class="schema-field">
+                <span class="fk">instructor_id</span
+                ><span class="schema-type">uuid FK</span>
+              </div>
+              <div class="schema-field">
+                <span>title</span><span class="schema-type">varchar</span>
+              </div>
+              <div class="schema-field">
+                <span>description</span><span class="schema-type">text</span>
+              </div>
+              <div class="schema-field">
+                <span>status</span><span class="schema-type">enum</span>
+              </div>
+              <div class="schema-field">
+                <span>cover_url</span><span class="schema-type">varchar</span>
+              </div>
+              <div class="schema-field">
+                <span>created_at</span
+                ><span class="schema-type">timestamp</span>
+              </div>
+            </div>
+
+            <div class="schema-table">
+              <div class="schema-head">
+                <i data-lucide="file-text"></i> lessons
+              </div>
+              <div class="schema-field">
+                <span class="pk">id</span
+                ><span class="schema-type">uuid PK</span>
+              </div>
+              <div class="schema-field">
+                <span class="fk">course_id</span
+                ><span class="schema-type">uuid FK</span>
+              </div>
+              <div class="schema-field">
+                <span>title</span><span class="schema-type">varchar</span>
+              </div>
+              <div class="schema-field">
+                <span>video_url</span><span class="schema-type">varchar</span>
+              </div>
+              <div class="schema-field">
+                <span>duration_s</span><span class="schema-type">integer</span>
+              </div>
+              <div class="schema-field">
+                <span>order_index</span><span class="schema-type">integer</span>
+              </div>
+              <div class="schema-field">
+                <span>materials</span><span class="schema-type">jsonb</span>
+              </div>
+            </div>
+
+            <div class="schema-table">
+              <div class="schema-head">
+                <i data-lucide="user-check"></i> enrollments
+              </div>
+              <div class="schema-field">
+                <span class="pk">id</span
+                ><span class="schema-type">uuid PK</span>
+              </div>
+              <div class="schema-field">
+                <span class="fk">user_id</span
+                ><span class="schema-type">uuid FK</span>
+              </div>
+              <div class="schema-field">
+                <span class="fk">course_id</span
+                ><span class="schema-type">uuid FK</span>
+              </div>
+              <div class="schema-field">
+                <span>enrolled_at</span
+                ><span class="schema-type">timestamp</span>
+              </div>
+              <div class="schema-field">
+                <span>status</span><span class="schema-type">enum</span>
+              </div>
+              <div class="schema-field">
+                <span>completed_at</span
+                ><span class="schema-type">timestamp?</span>
+              </div>
+            </div>
+
+            <div class="schema-table">
+              <div class="schema-head">
+                <i data-lucide="trending-up"></i> progress
+              </div>
+              <div class="schema-field">
+                <span class="pk">id</span
+                ><span class="schema-type">uuid PK</span>
+              </div>
+              <div class="schema-field">
+                <span class="fk">enrollment_id</span
+                ><span class="schema-type">uuid FK</span>
+              </div>
+              <div class="schema-field">
+                <span class="fk">lesson_id</span
+                ><span class="schema-type">uuid FK</span>
+              </div>
+              <div class="schema-field">
+                <span>completed</span><span class="schema-type">boolean</span>
+              </div>
+              <div class="schema-field">
+                <span>watch_position</span
+                ><span class="schema-type">integer</span>
+              </div>
+              <div class="schema-field">
+                <span>updated_at</span
+                ><span class="schema-type">timestamp</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /tech -->
+
+      <!-- ════════════════════════════════
+         SEGURIDAD
+    ════════════════════════════════ -->
+      <section class="section reveal" id="seguridad" aria-label="Seguridad">
+        <div class="section-header">
+          <span class="section-eyebrow">Seguridad</span>
+          <h2 class="section-title">Protección en <em>cada capa</em></h2>
+          <p class="section-desc">
+            AulaSync implementa un modelo de seguridad de producción desde el
+            primer commit — no como parche posterior.
+          </p>
+          <div class="sep" aria-hidden="true"></div>
+        </div>
+
+        <div class="sec-grid">
+          <div class="sec-item">
+            <div class="sec-item-icon" aria-hidden="true">
+              <i data-lucide="key-round"></i>
+            </div>
+            <div>
+              <h4>JWT RS256 + Par RSA</h4>
+              <p>
+                Tokens firmados con clave privada RSA, verificados con clave
+                pública. Rotación posible sin downtime.
+              </p>
+            </div>
+          </div>
+
+          <div class="sec-item">
+            <div class="sec-item-icon" aria-hidden="true">
+              <i data-lucide="refresh-ccw"></i>
+            </div>
+            <div>
+              <h4>Refresh Token Rotation</h4>
+              <p>
+                Token de acceso de 15 min. Al renovar, el refresh anterior se
+                invalida. Reutilización = sesión revocada.
+              </p>
+            </div>
+          </div>
+
+          <div class="sec-item">
+            <div class="sec-item-icon" aria-hidden="true">
+              <i data-lucide="cookie"></i>
+            </div>
+            <div>
+              <h4>Cookie httpOnly segura</h4>
+              <p>
+                El refresh token vive en una cookie httpOnly inaccesible desde
+                JavaScript — protección XSS nativa.
+              </p>
+            </div>
+          </div>
+
+          <div class="sec-item">
+            <div class="sec-item-icon" aria-hidden="true">
+              <i data-lucide="shield-ban"></i>
+            </div>
+            <div>
+              <h4>Rate Limiting por IP</h4>
+              <p>
+                Límite de peticiones en endpoints críticos (login, register).
+                Bloqueo temporal ante intentos masivos.
+              </p>
+            </div>
+          </div>
+
+          <div class="sec-item">
+            <div class="sec-item-icon" aria-hidden="true">
+              <i data-lucide="shield"></i>
+            </div>
+            <div>
+              <h4>Helmet + Headers HTTP</h4>
+              <p>
+                CSP, HSTS, X-Frame-Options y demás headers de seguridad
+                configurados vía Helmet.js en Express.
+              </p>
+            </div>
+          </div>
+
+          <div class="sec-item">
+            <div class="sec-item-icon" aria-hidden="true">
+              <i data-lucide="scroll-text"></i>
+            </div>
+            <div>
+              <h4>Audit Log completo</h4>
+              <p>
+                Toda acción administrativa queda registrada: actor, acción,
+                objetivo, IP y timestamp preciso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /seguridad -->
+
+      <!-- ════════════════════════════════
+         PROGRESO DE DESARROLLO
+    ════════════════════════════════ -->
+      <section
+        class="section reveal"
+        id="estado"
+        aria-label="Estado de desarrollo"
+      >
+        <div class="section-header">
+          <span class="section-eyebrow">Estado actual · 2026</span>
+          <h2 class="section-title">Progreso de <em>desarrollo</em></h2>
+          <p class="section-desc">
+            Estado real de implementación, componente por componente.
+          </p>
+          <div class="sep" aria-hidden="true"></div>
+        </div>
+
+        <div class="progress-box" id="prog-box">
+          <p class="progress-box-title">AulaSync — Módulo de Cursos y Fichas</p>
+          <p class="progress-box-sub">
+            Los módulos de autenticación, roles, panel admin y configuración de
+            cuenta están completamente implementados. El módulo de cursos con
+            fichas/clases es el foco de desarrollo activo en 2026.
+          </p>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span><i data-lucide="lock"></i> Autenticación y seguridad</span>
+              <span class="bar-pct">100%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="100"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="users"></i> Sistema de roles y dashboards</span
+              >
+              <span class="bar-pct">100%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="100"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="settings-2"></i> Panel de administración</span
+              >
+              <span class="bar-pct">100%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="100"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="user-circle"></i> Configuración de cuenta y
+                perfil</span
+              >
+              <span class="bar-pct">100%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="100"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="database"></i> Schema de base de datos
+                (cursos)</span
+              >
+              <span class="bar-pct">90%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="90"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span><i data-lucide="code-2"></i> API de cursos y fichas</span>
+              <span class="bar-pct">80%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="80"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="cloud-upload"></i> Upload e integración
+                Cloudinary</span
+              >
+              <span class="bar-pct">70%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="70"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="play-circle"></i> Reproductor + tracking de
+                progreso</span
+              >
+              <span class="bar-pct">50%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="50"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="message-square"></i> Chat y mensajería por
+                curso</span
+              >
+              <span class="bar-pct">20%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="20"></div>
+            </div>
+          </div>
+
+          <div class="bar-row">
+            <div class="bar-meta">
+              <span
+                ><i data-lucide="bell"></i> Notificaciones en tiempo real</span
+              >
+              <span class="bar-pct">10%</span>
+            </div>
+            <div class="bar-track">
+              <div class="bar-fill" data-w="10"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /estado -->
+
+      <!-- ════════════════════════════════
+         ROADMAP
+    ════════════════════════════════ -->
+      <section
+        class="section reveal"
+        id="roadmap"
+        aria-label="Roadmap del proyecto"
+      >
+        <div class="section-header">
+          <span class="section-eyebrow">Roadmap 2026</span>
+          <h2 class="section-title">El camino <em>hacia adelante</em></h2>
+          <p class="section-desc">
+            Lo que está hecho, lo que está en progreso y lo que viene en las
+            próximas iteraciones del proyecto formativo.
+          </p>
+          <div class="sep" aria-hidden="true"></div>
+        </div>
+
+        <div class="roadmap-grid">
+          <div class="rm-card done">
+            <span class="rm-badge">
+              <i data-lucide="check-circle-2"></i> Completado
+            </span>
+            <h3>Base sólida</h3>
+            <ul>
+              <li><i data-lucide="check"></i> Autenticación JWT RS256</li>
+              <li><i data-lucide="check"></i> Refresh token rotation</li>
+              <li><i data-lucide="check"></i> 3 roles con dashboards</li>
+              <li><i data-lucide="check"></i> Panel de administración</li>
+              <li><i data-lucide="check"></i> Configuración de cuenta</li>
+              <li><i data-lucide="check"></i> Audit log de acciones</li>
+              <li><i data-lucide="check"></i> Diseño navy/dorado</li>
+            </ul>
+          </div>
+
+          <div class="rm-card wip">
+            <span class="rm-badge">
+              <i data-lucide="loader-2"></i> En progreso
+            </span>
+            <h3>Módulo de Cursos</h3>
+            <ul>
+              <li><i data-lucide="circle"></i> CRUD de cursos y fichas</li>
+              <li><i data-lucide="circle"></i> Upload a Cloudinary</li>
+              <li><i data-lucide="circle"></i> Reproductor de video</li>
+              <li><i data-lucide="circle"></i> Sistema de inscripciones</li>
+              <li><i data-lucide="circle"></i> Tracking de progreso</li>
+              <li><i data-lucide="circle"></i> Catálogo con filtros</li>
+            </ul>
+          </div>
+
+          <div class="rm-card next">
+            <span class="rm-badge">
+              <i data-lucide="clock"></i> Próximamente
+            </span>
+            <h3>Funciones avanzadas</h3>
+            <ul>
+              <li><i data-lucide="circle-dashed"></i> Comentarios por ficha</li>
+              <li>
+                <i data-lucide="circle-dashed"></i> Chat por curso en tiempo
+                real
+              </li>
+              <li>
+                <i data-lucide="circle-dashed"></i> Notificaciones WebSocket
+              </li>
+              <li><i data-lucide="circle-dashed"></i> Dashboard de métricas</li>
+              <li>
+                <i data-lucide="circle-dashed"></i> Reportes por instructor
+              </li>
+              <li><i data-lucide="circle-dashed"></i> App móvil (PWA)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- /roadmap -->
+
+      <!-- ════════════════════════════════
+         FOOTER
+    ════════════════════════════════ -->
+      <footer class="reveal" role="contentinfo">
+        <!-- Logo -->
+        <div class="footer-logo"><span>Aula</span>Sync</div>
+        <p class="footer-sub">
+          Plataforma educativa full-stack · Proyecto Formativo 2026
+        </p>
+        <p class="footer-tech">
+          React · Express · Supabase · Cloudinary · JWT RS256 · Tailwind CSS
+        </p>
+
+        <!-- Tags -->
+        <div class="footer-tags" role="list">
+          <span class="footer-tag" role="listitem">Full Stack</span>
+          <span class="footer-tag" role="listitem">Node.js</span>
+          <span class="footer-tag" role="listitem">PostgreSQL</span>
+          <span class="footer-tag" role="listitem">Google Classroom-style</span>
+          <span class="footer-tag" role="listitem">Role-based Auth</span>
+          <span class="footer-tag" role="listitem">Video Learning</span>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <!-- Credits -->
+        <div class="footer-credits">
+          <div class="footer-credits-left">
+            <p class="footer-elaborado">
+              <i data-lucide="calendar-days"></i>
+              Infografía elaborada el <strong>16 de marzo de 2026</strong>
+            </p>
+            <p class="footer-author">
+              <i data-lucide="pen-tool"></i>
+              Diseñada y desarrollada por <strong>Coffeent</strong>
+            </p>
+          </div>
+
+          <div class="footer-credits-right">
+            <a
+              href="https://github.com/CoffeentRu"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link"
+            >
+              <i data-lucide="github"></i>
+              <span>GitHub</span>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="footer-link footer-link-portfolio"
+            >
+              <i data-lucide="globe"></i>
+              <span>Portafolio</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+          <i data-lucide="copyright"></i>
+          <span
+            >2026 Coffeent · Todos los derechos reservados · AulaSync es un
+            proyecto formativo de uso académico</span
+          >
+        </div>
+      </footer>
+    </main>
+    <!-- /page -->
+
+    <!-- Back To Top -->
+    <button id="top-btn" aria-label="Volver al inicio">
+      <i data-lucide="chevron-up"></i>
+    </button>
+
+    <!-- Lucide Icons Init -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (typeof lucide !== "undefined") lucide.createIcons();
+      });
+    </script>
+
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

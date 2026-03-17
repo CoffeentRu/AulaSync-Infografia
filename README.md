@@ -105,6 +105,7 @@ Framer Motion     Helmet.js         Audit Log
 ## Estructura del proyecto
 
 ```
+
 AulaSync-Infografia/
 │
 ├── index.html          ← Página principal (HTML semántico)
@@ -117,6 +118,7 @@ AulaSync-Infografia/
 │
 ├── README.md           ← Este archivo
 └── DEPLOY.md           ← Guía de despliegue en GitHub Pages
+
 ```
 
 ---

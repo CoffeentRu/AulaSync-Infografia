@@ -89,14 +89,12 @@ AulaSync es una plataforma educativa full-stack tipo **Google Classroom** orient
 
 ## Características de la infografía
 
-- **100% estático** — solo HTML, CSS y JS vanilla, sin frameworks ni build tools
-- **Responsive** — adaptado para móvil, tablet y escritorio
-- **Animaciones** — partículas en el fondo, reveals al hacer scroll, barras de progreso animadas
-- **Interactivo** — cada paso del flujo es expandible con detalles técnicos y endpoints
-- **Iconografía** — Lucide Icons (SVG nativo, sin emojis)
-- **Sin selección de texto** — protección básica del contenido
-- **Barra de lectura** — progreso visual en la parte superior al hacer scroll
-- **Navegación fija** — navbar con smooth scroll a cada sección
+- **100% estático** — solo HTML, CSS y JS vanilla.
+- **Responsive** — adaptado para móvil, tablet y escritorio.
+- **Animaciones** — partículas en el fondo, reveals al hacer scroll, barras de progreso animadas.
+- **Interactivo** — cada paso del flujo es expandible con detalles técnicos y endpoints.
+- **Barra de lectura** — progreso visual en la parte superior al hacer scroll.
+- **Navegación fija** — navbar con smooth scroll a cada sección.
 
 ---
 

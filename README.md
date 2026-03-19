@@ -104,17 +104,13 @@ AulaSync es una plataforma educativa full-stack tipo **Google Classroom** orient
 
 ```
 AulaSync-Infografia/
-│
-├── index.html   
-│
+├── index.html
 ├── css/
-│   └── main.css        
-│
+│   └── main.css
 ├── js/
-│   └── main.js         
-│
-├── README.md          
-└── DEPLOY.md     
+│   └── main.js
+├── README.md
+└── DEPLOY.md
 ```
 
 ---

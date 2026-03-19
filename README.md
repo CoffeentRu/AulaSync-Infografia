@@ -53,13 +53,11 @@ Fue desarrollada como entregable del **Proyecto Formativo 2026**, con el objetiv
 
 AulaSync es una plataforma educativa full-stack tipo **Google Classroom** orientada a instituciones y academias que necesitan gestionar cursos, instructores y estudiantes. No depende de plataformas externas — todo el contenido, los datos y los usuarios viven bajo el control de la institución.
 
-```
 | Actor | Acción 1 | Acción 2 | Acción 3 |
 |---|---|---|---|
 | **Instructor** | Crea cursos y fichas | Publica contenido | Gestiona materiales |
 | **Aprendiz** | Se inscribe | Estudia a su ritmo | Completa el curso |
 | **Admin** | Gestiona usuarios | Consulta audit log | Controla la plataforma |
-```
 
 ---
 
@@ -79,15 +77,13 @@ AulaSync es una plataforma educativa full-stack tipo **Google Classroom** orient
 
 ## Stack técnico de AulaSync
 
-```
-Frontend          Backend           Base de datos      Storage
-──────────────    ──────────────    ───────────────    ──────────────
-React 18          Node.js           PostgreSQL         Cloudinary
-Vite              Express.js        Supabase           (videos, imgs)
-Tailwind CSS      JWT RS256         RLS Policies
-Framer Motion     Helmet.js         Audit Log
-                  Rate Limiting
-```
+| Frontend | Backend | Base de datos | Storage |
+|---|---|---|---|
+| React 18 | Node.js | PostgreSQL | Cloudinary |
+| Vite | Express.js | Supabase | Videos e imágenes |
+| Tailwind CSS | JWT RS256 | RLS Policies | |
+| Framer Motion | Helmet.js | Audit Log | |
+| | Rate Limiting | | |
 
 ---
 
@@ -107,20 +103,18 @@ Framer Motion     Helmet.js         Audit Log
 ## Estructura del proyecto
 
 ```
-
 AulaSync-Infografia/
 │
-├── index.html          ← Página principal (HTML semántico)
+├── index.html   
 │
 ├── css/
-│   └── main.css        ← Todos los estilos (variables, animaciones, responsive)
+│   └── main.css        
 │
 ├── js/
-│   └── main.js         ← Lógica JS (partículas, observers, interactividad)
+│   └── main.js         
 │
-├── README.md           ← Este archivo
-└── DEPLOY.md           ← Guía de despliegue en GitHub Pages
-
+├── README.md          
+└── DEPLOY.md     
 ```
 
 ---

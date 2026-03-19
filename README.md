@@ -54,9 +54,11 @@ Fue desarrollada como entregable del **Proyecto Formativo 2026**, con el objetiv
 AulaSync es una plataforma educativa full-stack tipo **Google Classroom** orientada a instituciones y academias que necesitan gestionar cursos, instructores y estudiantes. No depende de plataformas externas — todo el contenido, los datos y los usuarios viven bajo el control de la institución.
 
 ```
-Instructor  →  Crea cursos y fichas  →  Publica contenido
-Aprendiz    →  Se inscribe           →  Estudia a su ritmo  →  Completa el curso
-Admin       →  Gestiona usuarios     →  Consulta audit log  →  Controla la plataforma
+| Actor | Acción 1 | Acción 2 | Acción 3 |
+|---|---|---|---|
+| **Instructor** | Crea cursos y fichas | Publica contenido | Gestiona materiales |
+| **Aprendiz** | Se inscribe | Estudia a su ritmo | Completa el curso |
+| **Admin** | Gestiona usuarios | Consulta audit log | Controla la plataforma |
 ```
 
 ---

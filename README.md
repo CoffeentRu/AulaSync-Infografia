@@ -102,20 +102,14 @@ AulaSync es una plataforma educativa full-stack tipo **Google Classroom** orient
 
 ## Estructura del proyecto
 
-```
-AulaSync-Infografia/
-|-- index.html
-|-- css/
-|   |-- main.css
-|-- js/
-|   |-- main.js
-|-- README.md
-```
-
-- **`index.html`** — Página principal, HTML semántico
-- **`css/main.css`** — Estilos, variables, animaciones y responsive
-- **`js/main.js`** — Partículas, observers e interactividad
-- **`README.md`** — Este archivo
+📁 **AulaSync-Infografia/**
+- 📄 `index.html` — Página principal, HTML semántico
+- 📁 `css/`
+  - 📄 `main.css` — Estilos, variables, animaciones y responsive
+- 📁 `js/`
+  - 📄 `main.js` — Partículas, observers e interactividad
+- 📄 `README.md` — Este archivo
+- 📄 `DEPLOY.md` — Guía de despliegue en GitHub Pages
   
 ---
 
